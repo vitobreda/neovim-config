@@ -28,8 +28,9 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use 'MattesGroeger/vim-bookmarks'
-  use 'tom-anders/telescope-vim-bookmarks.nvim'
+
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
 
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -38,18 +39,13 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'onsails/lspkind-nvim'
 
-  use 'L3MON4D3/LuaSnip'
-  use 'saadparwaiz1/cmp_luasnip'
-
   use 'jose-elias-alvarez/typescript.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'sainnhe/everforest'
   use 'nvim-treesitter/nvim-treesitter'
   use 'windwp/nvim-ts-autotag'
-  use 'p00f/nvim-ts-rainbow'
   use 'axelvc/template-string.nvim'
   use 'j-hui/fidget.nvim'
-  use 'folke/todo-comments.nvim'
   use({
     "folke/noice.nvim",
     requires = {
@@ -64,6 +60,4 @@ return require('packer').startup(function(use)
     tag = '*'
   })
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
-  use 'tpope/vim-obsession'
-  use 'dhruvasagar/vim-prosession'
 end)
