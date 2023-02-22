@@ -16,7 +16,7 @@ opt.incsearch = true
 opt.mouse = 'a'
 opt.clipboard:append('unnamedplus')
 
-opt.termguicolors = false
+opt.termguicolors = true
 opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
