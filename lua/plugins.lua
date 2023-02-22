@@ -41,7 +41,6 @@ return require('packer').startup(function(use)
 
   use 'jose-elias-alvarez/typescript.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
-  use 'sainnhe/everforest'
   use 'nvim-treesitter/nvim-treesitter'
   use 'windwp/nvim-ts-autotag'
   use 'axelvc/template-string.nvim'
@@ -60,4 +59,12 @@ return require('packer').startup(function(use)
     tag = '*'
   })
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
+  use 'Mofiqul/dracula.nvim'
+  use 'tpope/vim-obsession'
+  use 'dhruvasagar/vim-prosession'
+  use('f-person/git-blame.nvim')
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+  })
 end)
